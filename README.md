@@ -17,4 +17,10 @@ The build will fail with the following error:
 If the `drools-model-compiler` dependency is removed from the `drools-project` pom.xml, the build will succeed. So, the
 issues appears to only affect executable models.
 
+## Workaround
+
+The Drools maintainers [suggest](https://issues.redhat.com/browse/DROOLS-7261?focusedId=22168169#comment-22168169) using
+the [lombok-maven-plugin] with the delombok goal. The `resolution` branch of this repository demonstrates this approach.
+
 [DROOLS-7261]: https://issues.redhat.com/browse/DROOLS-7261
+[lombok-maven-plugin]: http://anthonywhitford.com/lombok.maven/lombok-maven-plugin/usage.html
